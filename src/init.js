@@ -12,7 +12,7 @@ export default function (args) {
   const { source, target } = args;
   // TODO check folder exists...
   const absoluteTarget = `${process.env.PWD}/${target}`;
-  const tmpTarget = path.resolve(`${process.env.PWD}/${target}/../doxity-tmp-${new Date()}`);
+  const tmpTarget = path.resolve(`${process.env.PWD}/${target}/../doxity-tmp`);
   // clear the target dir
   clearDirectory(absoluteTarget)
   .then(() => {
